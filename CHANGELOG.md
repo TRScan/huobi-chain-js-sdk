@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.5...v0.0.6) (2020-07-13)
+
+
+### Features
+
+* supported `change_org_admin` in `KycService` KycService ([#2](https://github.com/homura/huobi-chain-sdk-js/issues/2)) ([0fa483f](https://github.com/homura/huobi-chain-sdk-js/commit/0fa483f1cd4a2f9ce646e1565a8d9b4fefb3355a))
+
 ### [0.0.5](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.4...v0.0.5) (2020-07-11)
 
 
