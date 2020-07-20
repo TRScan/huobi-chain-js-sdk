@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.10...v0.0.11) (2020-07-20)
+
+
+### Bug Fixes
+
+* fix mismatch of InterpreterType in RISCVService ([#6](https://github.com/homura/huobi-chain-sdk-js/issues/6)) ([36d03f4](https://github.com/homura/huobi-chain-sdk-js/commit/36d03f4d657397398eb7b1ce993f4385840711bb))
+
 ### [0.0.10](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.9...v0.0.10) (2020-07-20)
 
 
