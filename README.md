@@ -1,8 +1,11 @@
 # huobi-chain-sdk
 
-Huobi Chain JavaScript SDK. The SDK is a binding for [Huobi Chain Services](https://github.com/HuobiGroup/huobi-chain/tree/master/services)  
-base on [muta-sdk](https://github.com/nervosnetwork/muta-sdk-js). It is recommended to code with an IDE that supports TypeScript such as VSCode or WebStorm,
-there will be corresponding code completion.
+Huobi Chain JavaScript SDK. 
+
+The SDK is a wrapper for [Huobi Chain services](https://github.com/HuobiGroup/huobi-chain/tree/master/services)  
+base on [muta-sdk](https://github.com/nervosnetwork/muta-sdk-js).
+
+Check out [Muta service](https://github.com/nervosnetwork/muta-sdk-js/tree/master/packages/muta-service) to learn more about how to use the SDK
 
 ## Install
 
@@ -13,17 +16,17 @@ npm install @mutadev/muta-sdk@dev @mutadev/service@dev graphql@14.6 huobi-chain-
 ## Example
 
 ```js
-const { AssetService } = require("huobi-chain-sdk");
+const { AssetService } = require('huobi-chain-sdk');
 
 async function main() {
   const service = new AssetService();
   const receipt = await service.write.create_asset({
-      name: 'MyToken',
-      supply,
-      precision,
-      symbol: 'MT',
-      relayable: false,
-    });
+    name: 'MyToken',
+    supply: 10000000,
+    precision: 0,
+    symbol: 'MT',
+    relayable: false,
+  });
 
   console.log(receipt.response);
 }
