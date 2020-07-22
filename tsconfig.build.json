@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "target": "es2017",
+    "outDir": "lib",
+    "module": "commonjs"
+  },
+  "include": ["src"],
+  "exclude": ["**/*.spec.ts"]
+}

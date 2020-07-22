@@ -15,10 +15,10 @@ test('test AssetService', async () => {
   const supply = 10000;
   const precision = 18;
   const res = await service.write.create_asset({
-    name: Math.random().toString(),
+    name: 'M' + (Math.random() * 10000).toFixed(0),
     supply,
     precision,
-    symbol: Math.random().toString(),
+    symbol: 'M' + (Math.random() * 10000).toFixed(0),
     relayable: false,
   });
 

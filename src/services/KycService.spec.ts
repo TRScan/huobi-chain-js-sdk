@@ -6,7 +6,7 @@ const account = Account.fromPrivateKey(
   '0x2b672bb959fa7a852d7259b129b65aee9c83b39f427d6f7bded1f58c4c9310c2',
 );
 
-const client = new Client();
+const client = new Client({ defaultCyclesLimit: '0xffffff' });
 
 test('test KycService', async () => {
   const service = new KycService(client, account);
@@ -38,6 +38,8 @@ test('test KycService', async () => {
   const res6 = await service.read.get_org_info('muta');
   expect(Number(res6.code)).toBe(0x67);
 
-  const res7 = await service.write.change_service_admin({new_admin: '0xcff1002107105460941f797828f468667aa1a2db'});
+  const res7 = await service.write.change_service_admin({
+    new_admin: '0xcff1002107105460941f797828f468667aa1a2db',
+  });
   expect(Number(res7.response.response.code)).toBe(0);
 });
