@@ -1,16 +1,14 @@
 # huobi-chain-sdk
 
-Huobi Chain JavaScript SDK. 
-
-The SDK is a wrapper for [Huobi Chain services](https://github.com/HuobiGroup/huobi-chain/tree/master/services)  
-base on [muta-sdk](https://github.com/nervosnetwork/muta-sdk-js).
-
-Check out [Muta service](https://github.com/nervosnetwork/muta-sdk-js/tree/master/packages/muta-service) to learn more about how to use the SDK
+The SDK is a wrapper for Huobi Chain [services](https://github.com/HuobiGroup/huobi-chain/tree/master/services) base on [muta-sdk](https://github.com/nervosnetwork/muta-sdk-js). Check out [Muta service](https://github.com/nervosnetwork/muta-sdk-js/tree/master/packages/muta-service) to learn more about how to use the SDK.
 
 ## Install
 
 ```
-npm install @mutadev/muta-sdk@dev @mutadev/service@dev graphql@14.6 huobi-chain-sdk
+npm install @mutadev/muta-sdk@dev.2 \
+  @mutadev/service@dev.2 \
+  graphql@14.6 \
+  huobi-chain-sdk
 ```
 
 ## Example
