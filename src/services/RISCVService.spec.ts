@@ -5,7 +5,7 @@ import { InterpreterType, RISCVService } from './RISCVService';
 import { join } from 'path';
 
 const account = Account.fromPrivateKey(
-  '0x2b672bb959fa7a852d7259b129b65aee9c83b39f427d6f7bded1f58c4c9310c2',
+  '0X0000000000000000000000000000000000000000000000000000000000000001',
 );
 
 const client = new Client({
@@ -34,7 +34,7 @@ async function grant_deploy_auth(address: string) {
   });
 }
 
-test('test RISCVService', async () => {
+test.skip('test RISCVService', async () => {
   await check_deploy_auth(account.address);
   await grant_deploy_auth(account.address);
   await check_deploy_auth(account.address);

@@ -3,7 +3,7 @@ import { Client } from '@mutadev/client';
 import { KycService } from './KycService';
 
 const account = Account.fromPrivateKey(
-  '0x2b672bb959fa7a852d7259b129b65aee9c83b39f427d6f7bded1f58c4c9310c2',
+  '0X0000000000000000000000000000000000000000000000000000000000000001',
 );
 
 const client = new Client({ defaultCyclesLimit: '0xffffff' });
@@ -21,7 +21,7 @@ test('test KycService', async () => {
 
   const res4 = await service.write.update_user_tags({
     org_name: 'huobi',
-    user: '0xcff1002107105460941f797828f468667aa1a2db',
+    user: 'muta1elcsqgg8zp2xp9ql09uz3argvea2rgkmglwr47',
     tags: {
       name: ['Alice'],
       age: ['10'],
@@ -31,7 +31,7 @@ test('test KycService', async () => {
 
   const res5 = await service.read.get_user_tags({
     org_name: 'huobi',
-    user: '0xcff1002107105460941f797828f468667aa1a2db',
+    user: 'muta1elcsqgg8zp2xp9ql09uz3argvea2rgkmglwr47',
   });
   expect(Number(res5.code)).toBe(0);
 
@@ -39,7 +39,7 @@ test('test KycService', async () => {
   expect(Number(res6.code)).toBe(0x67);
 
   const res7 = await service.write.change_service_admin({
-    new_admin: '0xcff1002107105460941f797828f468667aa1a2db',
+    new_admin: 'muta1elcsqgg8zp2xp9ql09uz3argvea2rgkmglwr47',
   });
   expect(Number(res7.response.response.code)).toBe(0);
 });

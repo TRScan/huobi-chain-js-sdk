@@ -1,9 +1,9 @@
 import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Hash, Hex, u32, u64, Vec } from '@mutadev/types';
+import { Address, Hash, Bytes, u32, u64, Vec } from '@mutadev/types';
 
 interface Metadata {
   chain_id: Hash;
-  common_ref: Hex;
+  common_ref: Bytes;
   timeout_gap: u64;
   cycles_limit: u64;
   cycles_price: u64;
@@ -18,7 +18,7 @@ interface Metadata {
 }
 
 interface ValidatorExtend {
-  bls_pub_key: Hex;
+  bls_pub_key: Bytes;
   address: Address;
   propose_weight: u32;
   vote_weight: u32;

@@ -1,5 +1,5 @@
 import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Hex, u32, u64, Vec } from '@mutadev/types';
+import { Address, Bytes, u32, u64, Vec } from '@mutadev/types';
 
 interface SetAdminPayload {
   admin: Address;
@@ -47,7 +47,7 @@ interface UpdateValidatorsPayload {
 }
 
 interface ValidatorExtend {
-  bls_pub_key: Hex;
+  bls_pub_key: Bytes;
   address: Address;
   propose_weight: u32;
   vote_weight: u32;
@@ -72,7 +72,7 @@ interface AccumulateProfitPayload {
 export const GovernanceService = createServiceBindingClass({
   serviceName: 'governance',
   read: {
-    get_admin_address: read<null, Address>(),
+    get_admin: read<null, Address>(),
     get_govern_info: read<null, GovernanceInfo>(),
     get_tx_failure_fee: read<null, u64>(),
     get_tx_floor_fee: read<null, u64>(),

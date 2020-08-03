@@ -1,5 +1,5 @@
 import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Hash, Hex, u64 } from '@mutadev/types';
+import { Address, Bytes, Hash, u64, Vec } from '@mutadev/types';
 
 interface GetBalancePayload {
   asset_id: Hash;
@@ -19,10 +19,17 @@ interface TransferPayload {
   memo: string;
 }
 
+interface IssuerWithBalance {
+  addr: Address;
+  balance: u64;
+}
+
 interface CreateAssetPayload {
   name: string;
   symbol: string;
+  admin: Address;
   supply: u64;
+  init_mints: Vec<IssuerWithBalance>;
   precision: u64;
   relayable: boolean;
 }
@@ -72,14 +79,14 @@ interface MintAssetPayload {
   asset_id: Hash;
   to: Address;
   amount: u64;
-  proof: Hex;
+  proof: Bytes;
   memo: string;
 }
 
 interface BurnAssetPayload {
   asset_id: Hash;
   amount: u64;
-  proof: Hex;
+  proof: Bytes;
   memo: string;
 }
 

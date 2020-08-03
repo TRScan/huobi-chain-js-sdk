@@ -22,16 +22,16 @@
     "node": ">=10"
   },
   "peerDependencies": {
-    "@mutadev/muta-sdk": "0.2.0-dev.2",
-    "@mutadev/service": "0.2.0-dev.2",
+    "@mutadev/muta-sdk": "0.2.0-alpha.1",
+    "@mutadev/service": "0.2.0-alpha.1",
     "graphql": "^14.6.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.5",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
-    "@mutadev/muta-sdk": "0.2.0-dev.2",
-    "@mutadev/service": "0.2.0-dev.2",
+    "@mutadev/muta-sdk": "0.2.0-alpha.1",
+    "@mutadev/service": "0.2.0-alpha.1",
     "@types/jest": "^26.0.5",
     "eslint": "^7.4.0",
     "graphql": "^14.6.0",

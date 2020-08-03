@@ -4,7 +4,7 @@ import { BigNumber } from '@mutadev/shared';
 import { AssetService } from './AssetService';
 
 const account = Account.fromPrivateKey(
-  '0x2b672bb959fa7a852d7259b129b65aee9c83b39f427d6f7bded1f58c4c9310c2',
+  '0X0000000000000000000000000000000000000000000000000000000000000001',
 );
 
 const client = new Client();
@@ -20,6 +20,8 @@ test('test AssetService', async () => {
     precision,
     symbol: 'M' + (Math.random() * 10000).toFixed(0),
     relayable: false,
+    admin: account.address,
+    init_mints: [{ addr: account.address, balance: supply }],
   });
 
   const asset = res.response.response.succeedData;
@@ -29,7 +31,7 @@ test('test AssetService', async () => {
 
   await service.write.transfer({
     asset_id: asset.id,
-    to: '0x0000000000000000000000000000000000000000',
+    to: 'muta1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqggfy0d',
     value: 123,
     memo: '',
   });

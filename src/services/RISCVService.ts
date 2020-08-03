@@ -39,6 +39,9 @@ interface GetContractResp {
   authorizer?: Address;
 }
 
+/**
+ * unusable, publish with next version
+ */
 export const RISCVService = createServiceBindingClass({
   serviceName: 'riscv',
   read: {
