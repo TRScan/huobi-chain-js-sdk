@@ -5,9 +5,9 @@ The SDK is a wrapper for Huobi Chain [services](https://github.com/HuobiGroup/hu
 ## Install
 
 ```
-npm install @mutadev/muta-sdk@dev.2 \
-  @mutadev/service@dev.2 \
-  graphql@14.6 \
+npm install @mutadev/muta-sdk@0.2.0-alpha.1 \
+  @mutadev/service@@0.2.0-alpha.1 \
+  graphql@14.7.0 \
   huobi-chain-sdk
 ```
 
@@ -24,6 +24,8 @@ async function main() {
     precision: 0,
     symbol: 'MT',
     relayable: false,
+    admin: '...',
+    init_mints: [{ addr: '...', balance: 10000000 }],
   });
 
   console.log(receipt.response);
