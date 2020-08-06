@@ -72,7 +72,8 @@ interface GetAllowanceResponse {
 }
 
 interface ChangeAdminPayload {
-  addr: Address;
+  asset_id: Hash;
+  new_admin: Address;
 }
 
 interface MintAssetPayload {
