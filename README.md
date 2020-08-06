@@ -5,10 +5,7 @@ The SDK is a wrapper for Huobi Chain [services](https://github.com/HuobiGroup/hu
 ## Install
 
 ```
-npm install @mutadev/muta-sdk@0.2.0-alpha.1 \
-  @mutadev/service@@0.2.0-alpha.1 \
-  graphql@14.7.0 \
-  huobi-chain-sdk
+npm install graphql@14.7.0 huobi-chain-sdk
 ```
 
 ## Example
