@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-beta.2](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.12...v0.5.0-beta.2) (2020-08-06)
+
+
+### Features
+
+* supported receipt helper ([9c9de30](https://github.com/homura/huobi-chain-sdk-js/commit/9c9de30faa76fc479ba247001883aebca68cfadb))
+
+
+### Bug Fixes
+
+* fix ChangeAdminPayload in AssetService ([8841cb9](https://github.com/homura/huobi-chain-sdk-js/commit/8841cb9cebde701543c82e15e71a692513ba28aa))
+
 ### [0.0.12](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.11...v0.0.12) (2020-08-03)
 
 
