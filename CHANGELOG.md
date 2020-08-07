@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-beta.2.1](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2...v0.5.0-beta.2.1) (2020-08-07)
+
 ## [0.5.0-beta.2](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.12...v0.5.0-beta.2) (2020-08-06)
 
 
