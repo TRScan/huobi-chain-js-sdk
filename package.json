@@ -16,14 +16,15 @@
     "test": "jest -c jest.e2e.config.js",
     "clean": "rimraf lib",
     "lint": "eslint src",
-    "pretty": "pretty-quick --staged"
+    "pretty": "pretty-quick --staged",
+    "prepublishOnly": " npm run build && npm run test"
   },
   "engines": {
     "node": ">=10"
   },
   "dependencies": {
-    "@mutadev/muta-sdk": "0.2.0-beta.2",
-    "@mutadev/service": "0.2.0-beta.2"
+    "@mutadev/muta-sdk": "0.2.0-beta.2.1",
+    "@mutadev/service": "0.2.0-beta.2.1"
   },
   "peerDependencies": {
     "graphql": "^14.6.0"
