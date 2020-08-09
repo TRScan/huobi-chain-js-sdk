@@ -23,8 +23,8 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@mutadev/muta-sdk": "0.2.0-beta.2.1",
-    "@mutadev/service": "0.2.0-beta.2.1"
+    "@mutadev/muta-sdk": "0.2.0-beta.2.2",
+    "@mutadev/service": "0.2.0-beta.2.2"
   },
   "peerDependencies": {
     "graphql": "^14.6.0"
