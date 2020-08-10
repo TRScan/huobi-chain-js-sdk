@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-beta.4](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2.2...v0.5.0-beta.4) (2020-08-10)
+
+
+### Features
+
+* update struct to fit huobi-chain@0.5.0-beta.2 ([7382266](https://github.com/homura/huobi-chain-sdk-js/commit/7382266f86a9fd7564e0850e2101dd3362849310))
+* update struct to fit huobi-chain@0.5.0-beta.2 ([0647ba1](https://github.com/homura/huobi-chain-sdk-js/commit/0647ba1be661265fb71e8cc1b5905c9c7813ef42))
+
 ## [0.5.0-beta.2.2](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2.1...v0.5.0-beta.2.2) (2020-08-09)
 
 ## [0.5.0-beta.2.1](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2...v0.5.0-beta.2.1) (2020-08-07)
