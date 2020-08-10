@@ -1,6 +1,5 @@
 import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Vec } from '@mutadev/types';
-import { Bytes, Hash, u64 } from '@mutadev/service/lib/types';
+import { Address, Bytes, Hash, u64, Vec } from '@mutadev/types';
 
 interface NewAdmin {
   new_admin: Address;
