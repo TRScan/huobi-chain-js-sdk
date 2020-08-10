@@ -1,5 +1,5 @@
 import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Vec } from '@mutadev/types';
+import { Address, Maybe, Vec } from '@mutadev/types';
 
 interface KycOrgInfo {
   name: string;
@@ -55,7 +55,8 @@ export const KycService = createServiceBindingClass({
   serviceName: 'kyc',
   read: {
     get_orgs: read<null, Vec<string>>(),
-    get_org_info: read<string, KycOrgInfo | null>(),
+    get_admin: read<null, Address>(),
+    get_org_info: read<string, Maybe<KycOrgInfo>>(),
     get_org_supported_tags: read<string, Vec<string>>(),
     get_user_tags: read<GetUserTags, Record<string, Vec<string>>>(),
     eval_user_tag_expression: read<EvalUserTagExpression, boolean>(),

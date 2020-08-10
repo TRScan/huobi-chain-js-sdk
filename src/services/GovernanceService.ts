@@ -48,6 +48,7 @@ interface UpdateValidatorsPayload {
 
 interface ValidatorExtend {
   bls_pub_key: Bytes;
+  pub_key: Bytes;
   address: Address;
   propose_weight: u32;
   vote_weight: u32;
