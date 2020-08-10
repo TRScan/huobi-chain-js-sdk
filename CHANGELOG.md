@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-beta.4.1](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-beta.4...v0.5.0-beta.4.1) (2020-08-10)
+
+
+### Features
+
+* export `MetadataService` as the top-level service ([#4](https://github.com/HuobiGroup/huobi-chain-js-sdk/issues/4)) ([ec91f6b](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/ec91f6b4e3067e2b8a3a6e5e7858b0ce6a5a13fa))
+
 ## [0.5.0-beta.4](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.5.0-beta.2.2...v0.5.0-beta.4) (2020-08-10)
 
 
