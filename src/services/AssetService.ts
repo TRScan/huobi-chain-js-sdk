@@ -98,6 +98,7 @@ export const AssetService = createServiceBindingClass({
   read: {
     get_asset: read<GetAssetPayload, Asset>(),
     get_native_asset: read<null, Asset>(),
+    get_admin: read<Hash, Address>(),
     get_allowance: read<GetAllowancePayload, GetAllowanceResponse>(),
     get_balance: read<GetBalancePayload, GetBalanceResponse>(),
   },
