@@ -2,80 +2,80 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [0.5.0-beta.4](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2.2...v0.5.0-beta.4) (2020-08-10)
+## [0.5.0-beta.4](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.5.0-beta.2.2...v0.5.0-beta.4) (2020-08-10)
 
 
 ### Features
 
-* update struct to fit huobi-chain@0.5.0-beta.2 ([7382266](https://github.com/homura/huobi-chain-sdk-js/commit/7382266f86a9fd7564e0850e2101dd3362849310))
-* update struct to fit huobi-chain@0.5.0-beta.2 ([0647ba1](https://github.com/homura/huobi-chain-sdk-js/commit/0647ba1be661265fb71e8cc1b5905c9c7813ef42))
+* update struct to fit huobi-chain@0.5.0-beta.2 ([7382266](https://github.com/huobigroup/huobi-chain-js-sdk/commit/7382266f86a9fd7564e0850e2101dd3362849310))
+* update struct to fit huobi-chain@0.5.0-beta.2 ([0647ba1](https://github.com/huobigroup/huobi-chain-js-sdk/commit/0647ba1be661265fb71e8cc1b5905c9c7813ef42))
 
-## [0.5.0-beta.2.2](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2.1...v0.5.0-beta.2.2) (2020-08-09)
+## [0.5.0-beta.2.2](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.5.0-beta.2.1...v0.5.0-beta.2.2) (2020-08-09)
 
-## [0.5.0-beta.2.1](https://github.com/homura/huobi-chain-sdk-js/compare/v0.5.0-beta.2...v0.5.0-beta.2.1) (2020-08-07)
+## [0.5.0-beta.2.1](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.5.0-beta.2...v0.5.0-beta.2.1) (2020-08-07)
 
-## [0.5.0-beta.2](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.12...v0.5.0-beta.2) (2020-08-06)
+## [0.5.0-beta.2](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.12...v0.5.0-beta.2) (2020-08-06)
 
 
 ### Features
 
-* supported receipt helper ([9c9de30](https://github.com/homura/huobi-chain-sdk-js/commit/9c9de30faa76fc479ba247001883aebca68cfadb))
+* supported receipt helper ([9c9de30](https://github.com/huobigroup/huobi-chain-js-sdk/commit/9c9de30faa76fc479ba247001883aebca68cfadb))
 
 
 ### Bug Fixes
 
-* fix ChangeAdminPayload in AssetService ([8841cb9](https://github.com/homura/huobi-chain-sdk-js/commit/8841cb9cebde701543c82e15e71a692513ba28aa))
+* fix ChangeAdminPayload in AssetService ([8841cb9](https://github.com/huobigroup/huobi-chain-js-sdk/commit/8841cb9cebde701543c82e15e71a692513ba28aa))
 
-### [0.0.12](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.11...v0.0.12) (2020-08-03)
+### [0.0.12](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.11...v0.0.12) (2020-08-03)
 
 
 ### Features
 
-* update to huobi-chain@0.5.0-beta.1 ([2f10ee1](https://github.com/homura/huobi-chain-sdk-js/commit/2f10ee10baf04840ea27a7adb2623bb244d34b48))
+* update to huobi-chain@0.5.0-beta.1 ([2f10ee1](https://github.com/huobigroup/huobi-chain-js-sdk/commit/2f10ee10baf04840ea27a7adb2623bb244d34b48))
 
-### [0.0.11](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.10...v0.0.11) (2020-07-20)
+### [0.0.11](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.10...v0.0.11) (2020-07-20)
 
 
 ### Bug Fixes
 
-* fix mismatch of InterpreterType in RISCVService ([#6](https://github.com/homura/huobi-chain-sdk-js/issues/6)) ([36d03f4](https://github.com/homura/huobi-chain-sdk-js/commit/36d03f4d657397398eb7b1ce993f4385840711bb))
+* fix mismatch of InterpreterType in RISCVService ([#6](https://github.com/huobigroup/huobi-chain-js-sdk/issues/6)) ([36d03f4](https://github.com/huobigroup/huobi-chain-js-sdk/commit/36d03f4d657397398eb7b1ce993f4385840711bb))
 
-### [0.0.10](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.9...v0.0.10) (2020-07-20)
-
-
-### Features
-
-* export InterpreterType ([#5](https://github.com/homura/huobi-chain-sdk-js/issues/5)) ([1d0b10c](https://github.com/homura/huobi-chain-sdk-js/commit/1d0b10c8275ba7e2262fbcfe0a2bbd75761e3904))
-
-### [0.0.9](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.8...v0.0.9) (2020-07-16)
-
-### [0.0.8](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.7...v0.0.8) (2020-07-14)
-
-### [0.0.7](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.6...v0.0.7) (2020-07-13)
-
-### [0.0.6](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.5...v0.0.6) (2020-07-13)
+### [0.0.10](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.9...v0.0.10) (2020-07-20)
 
 
 ### Features
 
-* supported `change_org_admin` in `KycService` KycService ([#2](https://github.com/homura/huobi-chain-sdk-js/issues/2)) ([0fa483f](https://github.com/homura/huobi-chain-sdk-js/commit/0fa483f1cd4a2f9ce646e1565a8d9b4fefb3355a))
+* export InterpreterType ([#5](https://github.com/huobigroup/huobi-chain-js-sdk/issues/5)) ([1d0b10c](https://github.com/huobigroup/huobi-chain-js-sdk/commit/1d0b10c8275ba7e2262fbcfe0a2bbd75761e3904))
 
-### [0.0.5](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.4...v0.0.5) (2020-07-11)
+### [0.0.9](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.8...v0.0.9) (2020-07-16)
 
+### [0.0.8](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.7...v0.0.8) (2020-07-14)
 
-### Features
+### [0.0.7](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.6...v0.0.7) (2020-07-13)
 
-* update muta-sdk to latest version ([d62d9fa](https://github.com/homura/huobi-chain-sdk-js/commit/d62d9fa0a761de4114b2a29e36a07363e955f52d))
-* update sdk version ([1babccc](https://github.com/homura/huobi-chain-sdk-js/commit/1babccc57b375c302bbaefc98a9b46a92630d2ba))
-* update to huobi-chain@0.3.0  ([#1](https://github.com/homura/huobi-chain-sdk-js/issues/1)) ([e124279](https://github.com/homura/huobi-chain-sdk-js/commit/e1242793a12af5f21b2c9d76a387c66d017b2754))
-
-### [0.0.4](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.3...v0.0.4) (2020-04-13)
-
-### [0.0.3](https://github.com/homura/huobi-chain-sdk-js/compare/v0.0.2...v0.0.3) (2020-03-30)
+### [0.0.6](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.5...v0.0.6) (2020-07-13)
 
 
 ### Features
 
-* make `muta-sdk` as peerDependencies ([0da5b42](https://github.com/homura/huobi-chain-sdk-js/commit/0da5b4252cef59e0bb08e45459da176e9648f009))
+* supported `change_org_admin` in `KycService` KycService ([#2](https://github.com/huobigroup/huobi-chain-js-sdk/issues/2)) ([0fa483f](https://github.com/huobigroup/huobi-chain-js-sdk/commit/0fa483f1cd4a2f9ce646e1565a8d9b4fefb3355a))
+
+### [0.0.5](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.4...v0.0.5) (2020-07-11)
+
+
+### Features
+
+* update muta-sdk to latest version ([d62d9fa](https://github.com/huobigroup/huobi-chain-js-sdk/commit/d62d9fa0a761de4114b2a29e36a07363e955f52d))
+* update sdk version ([1babccc](https://github.com/huobigroup/huobi-chain-js-sdk/commit/1babccc57b375c302bbaefc98a9b46a92630d2ba))
+* update to huobi-chain@0.3.0  ([#1](https://github.com/huobigroup/huobi-chain-js-sdk/issues/1)) ([e124279](https://github.com/huobigroup/huobi-chain-js-sdk/commit/e1242793a12af5f21b2c9d76a387c66d017b2754))
+
+### [0.0.4](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.3...v0.0.4) (2020-04-13)
+
+### [0.0.3](https://github.com/huobigroup/huobi-chain-js-sdk/compare/v0.0.2...v0.0.3) (2020-03-30)
+
+
+### Features
+
+* make `muta-sdk` as peerDependencies ([0da5b42](https://github.com/huobigroup/huobi-chain-js-sdk/commit/0da5b4252cef59e0bb08e45459da176e9648f009))
 
 ### 0.0.1 (2020-03-19)
