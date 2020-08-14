@@ -1,52 +1,58 @@
-import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Bytes, Hash, u64, Vec } from '@mutadev/types';
+import {
+  Address,
+  bool,
+  Bytes,
+  createServiceClass,
+  Hash,
+  read,
+  String,
+  u64,
+  Vec,
+  write,
+} from '@mutadev/service';
 
-interface NewAdmin {
-  new_admin: Address;
-}
+const NewAdmin = {
+  new_admin: Address,
+};
 
-interface AddressList {
-  addrs: Vec<Address>;
-}
+const AddressList = {
+  addrs: Vec(Address),
+};
 
-interface StatusList {
-  status: Vec<boolean>;
-}
+const StatusList = {
+  status: Vec(bool),
+};
 
-interface TransactionRequest {
-  method: string;
-  service_name: string;
-  payload: string;
-}
+const TransactionRequest = {
+  method: String,
+  service_name: String,
+  payload: String,
+};
 
-interface RawTransaction {
-  chain_id: Hash;
-  cycles_price: u64;
-  cycles_limit: u64;
-  nonce: Hash;
-  request: TransactionRequest;
-  timeout: u64;
-  sender: Address;
-}
+const RawTransaction = {
+  chain_id: Hash,
+  cycles_price: u64,
+  cycles_limit: u64,
+  nonce: Hash,
+  request: TransactionRequest,
+  timeout: u64,
+  sender: Address,
+};
 
-interface SignedTransaction {
-  raw: RawTransaction;
-  tx_hash: Hash;
-  pubkey: Bytes;
-  signature: Bytes;
-}
+const SignedTransaction = {
+  raw: RawTransaction,
+  tx_hash: Hash,
+  pubkey: Bytes,
+  signature: Bytes,
+};
 
-export const AdmissionControlService = createServiceBindingClass({
-  serviceName: 'admission_control',
-  read: {
-    get_admin: read<null, Address>(),
-    is_permitted: read<SignedTransaction, null>(),
-    is_valid: read<SignedTransaction, null>(),
-    status: read<AddressList, StatusList>(),
-  },
-  write: {
-    change_admin: write<NewAdmin, null>(),
-    forbid: write<AddressList, null>(),
-    permit: write<AddressList, null>(),
-  },
+export const AdmissionControlService = createServiceClass('admission_control', {
+  get_admin: read(null, Address),
+  is_permitted: read(SignedTransaction, null),
+  is_valid: read(SignedTransaction, null),
+  status: read(AddressList, StatusList),
+
+  change_admin: write(NewAdmin, null),
+  forbid: write(AddressList, null),
+  permit: write(AddressList, null),
 });

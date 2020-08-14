@@ -1,60 +1,67 @@
-import { createServiceBindingClass, read, write } from '@mutadev/service';
-import { Address, Hash, Vec } from '@mutadev/types';
+import {
+  Address,
+  bool,
+  createServiceClass,
+  Hash,
+  read,
+  String,
+  Vec,
+  write,
+} from '@mutadev/service';
 
 export enum InterpreterType {
   Binary = 'Binary',
 }
 
-interface DeployPayload {
-  code: string;
-  intp_type: InterpreterType;
-  init_args: string;
-}
+const DeployPayload = {
+  code: String,
+  /**
+   * {@link InterpreterType}
+   */
+  intp_type: String,
+  init_args: String,
+};
 
-interface DeployResp {
-  address: Address;
-  init_ret: string;
-}
+const DeployResp = {
+  address: Address,
+  init_ret: String,
+};
 
-interface ExecPayload {
-  address: Address;
-  args: string;
-}
+const ExecPayload = {
+  address: Address,
+  args: String,
+};
 
-interface GetContractPayload {
-  address: Address;
-  get_code: boolean;
-  storage_keys: Vec<string>;
-}
+const GetContractPayload = {
+  address: Address,
+  get_code: bool,
+  storage_keys: Vec(String),
+};
 
-interface AddressList {
-  addresses: Vec<Address>;
-}
+const AddressList = {
+  addresses: Vec(Address),
+};
 
-interface GetContractResp {
-  code_hash: Hash;
-  intp_type: InterpreterType;
-  code: string;
-  storage_values: Vec<string>;
-  authorizer?: Address;
-}
+const GetContractResp = {
+  code_hash: Hash,
+  intp_type: InterpreterType,
+  code: String,
+  storage_values: Vec(String),
+  authorizer: Address,
+};
 
 /**
  * unusable, publish with next version
  */
-export const RISCVService = createServiceBindingClass({
-  serviceName: 'riscv',
-  read: {
-    call: read<ExecPayload, string>(),
-    check_deploy_auth: read<AddressList, AddressList>(),
-    get_contract: read<GetContractPayload, GetContractResp>(),
-  },
-  write: {
-    exec: write<ExecPayload, string>(),
-    grant_deploy_auth: write<AddressList, null>(),
-    revoke_deploy_auth: write<AddressList, null>(),
-    deploy: write<DeployPayload, DeployResp>(),
-    approve_contracts: write<AddressList, null>(),
-    revoke_contracts: write<AddressList, null>(),
-  },
+export const RISCVService = createServiceClass('riscv', {
+  call: read(ExecPayload, String),
+  check_deploy_auth: read(AddressList, AddressList),
+  get_contract: read(GetContractPayload, GetContractResp),
+  exec: write(ExecPayload, String),
+
+  grant_deploy_auth: write(AddressList, null),
+  revoke_deploy_auth: write(AddressList, null),
+  deploy: write(DeployPayload, DeployResp),
+  approve_contracts: write(AddressList, null),
+  revoke_contracts: write(AddressList, null),
 });
