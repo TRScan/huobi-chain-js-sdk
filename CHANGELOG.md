@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-rc.0](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-beta.4.1...v0.5.0-rc.0) (2020-08-14)
+
+
+### Features
+
+* update sdk to rc version to available runtime check ([e04a58a](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/e04a58a81bbe259a4653a30596bd898864c3906c))
+
 ## [0.5.0-beta.4.1](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-beta.4...v0.5.0-beta.4.1) (2020-08-10)
 
 
