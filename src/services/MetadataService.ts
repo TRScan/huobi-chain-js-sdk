@@ -10,7 +10,7 @@ import {
   write,
 } from '@mutadev/service';
 
-const ValidatorExtend = {
+export const ValidatorExtend = {
   bls_pub_key: Bytes,
   pub_key: Bytes,
   address: Address,
@@ -18,7 +18,7 @@ const ValidatorExtend = {
   vote_weight: u32,
 };
 
-const Metadata = {
+export const Metadata = {
   chain_id: Hash,
   bech32_address_hrp: String,
   common_ref: Bytes,
@@ -35,7 +35,7 @@ const Metadata = {
   max_tx_size: u64,
 };
 
-const UpdateMetadataPayload = {
+export const UpdateMetadataPayload = {
   verifier_list: Vec(ValidatorExtend),
   interval: u64,
   propose_ratio: u64,

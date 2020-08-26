@@ -9,7 +9,7 @@ import {
   String,
 } from '@mutadev/service';
 
-const KycOrgInfo = {
+export const KycOrgInfo = {
   name: String,
   description: String,
   admin: Address,
@@ -17,43 +17,43 @@ const KycOrgInfo = {
   approved: bool,
 };
 
-const EvalUserTagExpression = {
+export const EvalUserTagExpression = {
   user: Address,
   expression: String,
 };
 
-const ChangeOrgAdmin = {
+export const ChangeOrgAdmin = {
   name: String,
   new_admin: Address,
 };
 
-const ChangeServiceAdmin = {
+export const ChangeServiceAdmin = {
   new_admin: Address,
 };
 
-const RegisterNewOrg = {
+export const RegisterNewOrg = {
   name: String,
   description: String,
   admin: Address,
   supported_tags: Vec(String),
 };
 
-const ChangeOrgApproved = {
+export const ChangeOrgApproved = {
   org_name: String,
   approved: bool,
 };
 
-const UpdateOrgSupportTags = {
+export const UpdateOrgSupportTags = {
   org_name: String,
   supported_tags: Vec(String),
 };
 
-const GetUserTags = {
+export const GetUserTags = {
   org_name: String,
   user: Address,
 };
 
-const UpdateUserTags = {
+export const UpdateUserTags = {
   org_name: String,
   user: Address,
   tags: HashMap(Vec(String)),

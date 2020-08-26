@@ -9,16 +9,16 @@ import {
   write,
 } from '@mutadev/service';
 
-const SetAdminPayload = {
+export const SetAdminPayload = {
   admin: Address,
 };
 
-const DiscountLevel = {
+export const DiscountLevel = {
   threshold: u64,
   discount_percent: u64,
 };
 
-const GovernanceInfo = {
+export const GovernanceInfo = {
   admin: Address,
   tx_failure_fee: u64,
   tx_floor_fee: u64,
@@ -27,16 +27,16 @@ const GovernanceInfo = {
   miner_benefit: u64,
 };
 
-const SetGovernInfoPayload = {
+export const SetGovernInfoPayload = {
   inner: GovernanceInfo,
 };
 
-const MinerChargeConfig = {
+export const MinerChargeConfig = {
   address: Address,
   miner_charge_address: Address,
 };
 
-const ValidatorExtend = {
+export const ValidatorExtend = {
   bls_pub_key: Bytes,
   pub_key: Bytes,
   address: Address,
@@ -44,7 +44,7 @@ const ValidatorExtend = {
   vote_weight: u32,
 };
 
-const UpdateMetadataPayload = {
+export const UpdateMetadataPayload = {
   verifier_list: Vec(ValidatorExtend),
   interval: u64,
   propose_ratio: u64,
@@ -58,22 +58,22 @@ const UpdateMetadataPayload = {
   max_tx_size: u64,
 };
 
-const UpdateValidatorsPayload = {
+export const UpdateValidatorsPayload = {
   verifier_list: Vec(ValidatorExtend),
 };
 
-const UpdateIntervalPayload = {
+export const UpdateIntervalPayload = {
   interval: u64,
 };
 
-const UpdateRatioPayload = {
+export const UpdateRatioPayload = {
   propose_ratio: u64,
   prevote_ratio: u64,
   precommit_ratio: u64,
   brake_ratio: u64,
 };
 
-const AccumulateProfitPayload = {
+export const AccumulateProfitPayload = {
   address: Address,
   accumulated_profit: u64,
 };

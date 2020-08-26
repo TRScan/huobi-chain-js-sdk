@@ -13,7 +13,7 @@ export enum InterpreterType {
   Binary = 'Binary',
 }
 
-const DeployPayload = {
+export const DeployPayload = {
   code: String,
   /**
    * {@link InterpreterType}
@@ -22,27 +22,27 @@ const DeployPayload = {
   init_args: String,
 };
 
-const DeployResp = {
+export const DeployResp = {
   address: Address,
   init_ret: String,
 };
 
-const ExecPayload = {
+export const ExecPayload = {
   address: Address,
   args: String,
 };
 
-const GetContractPayload = {
+export const GetContractPayload = {
   address: Address,
   get_code: bool,
   storage_keys: Vec(String),
 };
 
-const AddressList = {
+export const AddressList = {
   addresses: Vec(Address),
 };
 
-const GetContractResp = {
+export const GetContractResp = {
   code_hash: Hash,
   intp_type: InterpreterType,
   code: String,

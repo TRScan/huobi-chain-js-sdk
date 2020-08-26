@@ -1,6 +1,6 @@
-export * from './AdmissionControlService';
-export * from './AssetService';
-export * from './GovernanceService';
-export * from './KycService';
-export * from './RISCVService';
-export * from './MetadataService';
+export { AdmissionControlService } from './AdmissionControlService';
+export { AssetService } from './AssetService';
+export { GovernanceService } from './GovernanceService';
+export { KycService } from './KycService';
+export { RISCVService, InterpreterType } from './RISCVService';
+export { MetadataService } from './MetadataService';

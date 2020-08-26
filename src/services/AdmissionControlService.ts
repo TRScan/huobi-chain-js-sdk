@@ -11,25 +11,25 @@ import {
   write,
 } from '@mutadev/service';
 
-const NewAdmin = {
+export const NewAdmin = {
   new_admin: Address,
 };
 
-const AddressList = {
+export const AddressList = {
   addrs: Vec(Address),
 };
 
-const StatusList = {
+export const StatusList = {
   status: Vec(bool),
 };
 
-const TransactionRequest = {
+export const TransactionRequest = {
   method: String,
   service_name: String,
   payload: String,
 };
 
-const RawTransaction = {
+export const RawTransaction = {
   chain_id: Hash,
   cycles_price: u64,
   cycles_limit: u64,
@@ -39,7 +39,7 @@ const RawTransaction = {
   sender: Address,
 };
 
-const SignedTransaction = {
+export const SignedTransaction = {
   raw: RawTransaction,
   tx_hash: Hash,
   pubkey: Bytes,

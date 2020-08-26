@@ -11,30 +11,30 @@ import {
   write,
 } from '@mutadev/service';
 
-const GetBalancePayload = {
+export const GetBalancePayload = {
   asset_id: Hash,
   user: Address,
 };
 
-const GetBalanceResponse = {
+export const GetBalanceResponse = {
   asset_id: String,
   user: Address,
   balance: u64,
 };
 
-const TransferPayload = {
+export const TransferPayload = {
   asset_id: Hash,
   to: Address,
   value: u64,
   memo: String,
 };
 
-const IssuerWithBalance = {
+export const IssuerWithBalance = {
   addr: Address,
   balance: u64,
 };
 
-const CreateAssetPayload = {
+export const CreateAssetPayload = {
   name: String,
   symbol: String,
   admin: Address,
@@ -44,7 +44,7 @@ const CreateAssetPayload = {
   relayable: bool,
 };
 
-const Asset = {
+export const Asset = {
   id: Hash,
   name: String,
   symbol: String,
@@ -54,13 +54,13 @@ const Asset = {
   relayable: bool,
 };
 
-const GetAssetPayload = {
+export const GetAssetPayload = {
   id: Hash,
 };
 
-const ApprovePayload = TransferPayload;
+export const ApprovePayload = TransferPayload;
 
-const TransferFromPayload = {
+export const TransferFromPayload = {
   asset_id: Hash,
   sender: Address,
   recipient: Address,
@@ -68,25 +68,25 @@ const TransferFromPayload = {
   memo: String,
 };
 
-const GetAllowancePayload = {
+export const GetAllowancePayload = {
   asset_id: Hash,
   grantor: Address,
   grantee: Address,
 };
 
-const GetAllowanceResponse = {
+export const GetAllowanceResponse = {
   asset_id: Hash,
   grantor: Address,
   grantee: Address,
   value: u64,
 };
 
-const ChangeAdminPayload = {
+export const ChangeAdminPayload = {
   asset_id: Hash,
   new_admin: Address,
 };
 
-const MintAssetPayload = {
+export const MintAssetPayload = {
   asset_id: Hash,
   to: Address,
   amount: u64,
@@ -94,14 +94,14 @@ const MintAssetPayload = {
   memo: String,
 };
 
-const BurnAssetPayload = {
+export const BurnAssetPayload = {
   asset_id: Hash,
   amount: u64,
   proof: Bytes,
   memo: String,
 };
 
-const RelayAssetPayload = BurnAssetPayload;
+export const RelayAssetPayload = BurnAssetPayload;
 
 export const AssetService = createServiceClass('asset', {
   get_asset: read(GetAssetPayload, Asset),
