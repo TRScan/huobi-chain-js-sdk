@@ -1,18 +1,10 @@
+import { Account } from '@mutadev/muta-sdk';
 import { readFileSync } from 'fs';
-import { Account } from '@mutadev/account';
-import { Client } from '@mutadev/client';
 import { InterpreterType, RISCVService } from './RISCVService';
 import { join } from 'path';
 
-const account = Account.fromPrivateKey(
-  '0X0000000000000000000000000000000000000000000000000000000000000001',
-);
-
-const client = new Client({
-  defaultCyclesLimit: '0xffffffff',
-});
-
-const riscvService = new RISCVService(client, account);
+const account = new Account();
+const riscvService = new RISCVService();
 
 async function deploy(code: string, initArgs: string) {
   return riscvService.write.deploy({

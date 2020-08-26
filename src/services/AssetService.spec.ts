@@ -1,13 +1,8 @@
 import { Account } from '@mutadev/account';
-import { Client } from '@mutadev/client';
 import { BigNumber } from '@mutadev/shared';
 import { AssetService } from './AssetService';
 
-const account = Account.fromPrivateKey(
-  '0X0000000000000000000000000000000000000000000000000000000000000001',
-);
-
-const client = new Client();
+const account = new Account();
 
 function createRandomAsset(
   service: InstanceType<typeof AssetService>,
@@ -27,7 +22,7 @@ function createRandomAsset(
 }
 
 test('test AssetService', async () => {
-  const service = new AssetService(client, account);
+  const service = new AssetService();
   const supply = 10000;
   const res = await createRandomAsset(service, { supply });
 
@@ -52,7 +47,7 @@ test('test AssetService', async () => {
 });
 
 test('mint and burn asset', async () => {
-  const service = new AssetService(client, account);
+  const service = new AssetService();
   const res = await createRandomAsset(service);
 
   const asset = res.response.response.succeedData;
