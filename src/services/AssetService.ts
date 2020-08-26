@@ -50,7 +50,7 @@ const Asset = {
   symbol: String,
   supply: u64,
   precision: u64,
-  issuer: Address,
+  admin: Address,
   relayable: bool,
 };
 
