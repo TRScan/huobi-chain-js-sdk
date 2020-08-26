@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-rc.0.1](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-rc.0...v0.5.0-rc.0.1) (2020-08-26)
+
+
+### Features
+
+* export type definition for advanced usage ([85df936](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/85df9361395aac4e5a504f5ea1d3e60992857418))
+
+
+### Bug Fixes
+
+* replace `issuer` with `admin` in `AssetService` ([9eaaf4d](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/9eaaf4d273c39b7c13778027973be561e7979421))
+
 ## [0.5.0-rc.0](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-beta.4.1...v0.5.0-rc.0) (2020-08-14)
 
 
