@@ -5,6 +5,7 @@ module.exports = {
   },
   env: {
     jest: true,
+    node: true,
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
