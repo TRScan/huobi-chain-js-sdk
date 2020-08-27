@@ -83,6 +83,7 @@ export const GovernanceService = createServiceClass('governance', {
   get_govern_info: read(null, GovernanceInfo),
   get_tx_failure_fee: read(null, u64),
   get_tx_floor_fee: read(null, u64),
+  get_miner_charge_map: read(null, Vec(MinerChargeConfig)),
 
   set_admin: write(SetAdminPayload, null),
   set_govern_info: write(SetGovernInfoPayload, null),
