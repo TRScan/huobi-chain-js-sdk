@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0-rc.2](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-rc.0.1...v0.5.0-rc.2) (2020-09-07)
+
+
+### Features
+
+* supported `get_miner_charge_map` in `governance` service ([942c49c](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/942c49c8975235521ebee6e5079a91310b0e2cb8))
+* supported `get_miner_profit_outlet_address` in `GovernanceService` ([0f759b6](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/0f759b68ec43812a1062348f17f0fb8c4ec8f17e))
+
 ## [0.5.0-rc.0.1](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-rc.0...v0.5.0-rc.0.1) (2020-08-26)
 
 
