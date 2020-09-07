@@ -26,7 +26,7 @@ async function grant_deploy_auth(address: string) {
   });
 }
 
-test.skip('test RISCVService', async () => {
+test('test RISCVService', async () => {
   await check_deploy_auth(account.address);
   await grant_deploy_auth(account.address);
   await check_deploy_auth(account.address);
