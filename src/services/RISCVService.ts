@@ -57,8 +57,9 @@ export const RISCVService = createServiceClass('riscv', {
   call: read(ExecPayload, String),
   check_deploy_auth: read(AddressList, AddressList),
   get_contract: read(GetContractPayload, GetContractResp),
-  exec: write(ExecPayload, String),
+  get_admin: read(null, Address),
 
+  exec: write(ExecPayload, String),
   grant_deploy_auth: write(AddressList, null),
   revoke_deploy_auth: write(AddressList, null),
   deploy: write(DeployPayload, DeployResp),
