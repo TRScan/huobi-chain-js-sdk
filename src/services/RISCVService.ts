@@ -50,6 +50,10 @@ export const GetContractResp = {
   authorizer: Address,
 };
 
+export const SetAdminPayload = {
+  admin: Address,
+};
+
 /**
  * unusable, publish with next version
  */
@@ -59,6 +63,7 @@ export const RISCVService = createServiceClass('riscv', {
   get_contract: read(GetContractPayload, GetContractResp),
   get_admin: read(null, Address),
 
+  set_admin: write(SetAdminPayload, null),
   exec: write(ExecPayload, String),
   grant_deploy_auth: write(AddressList, null),
   revoke_deploy_auth: write(AddressList, null),
