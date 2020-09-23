@@ -1,5 +1,6 @@
 import { Account } from '@mutadev/account';
 import { BigNumber } from '@mutadev/shared';
+import { randomAddress } from '@mutadev/utils';
 import { AssetService } from './AssetService';
 
 const account = new Account();
@@ -33,7 +34,7 @@ test('test AssetService', async () => {
 
   await service.write.transfer({
     asset_id: asset.id,
-    to: 'muta1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqggfy0d',
+    to: randomAddress(),
     value: 123,
     memo: '',
   });
