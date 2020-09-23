@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0...v0.6.0) (2020-09-23)
+
+
+### Features
+
+* export `TimestampService` and `TransferQuotaService` to root ([3046f2c](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/3046f2ca1e936dbeea5571f54877a02b8518a083))
+* supported `set_admin` in RISCVService ([4760c21](https://github.com/HuobiGroup/huobi-chain-js-sdk/commit/4760c2173cfaeb5e86d2dc462cc60463741d3bf6))
+
 ## [0.5.0](https://github.com/HuobiGroup/huobi-chain-js-sdk/compare/v0.5.0-rc.2...v0.5.0) (2020-09-15)
 
 
